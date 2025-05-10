@@ -8,7 +8,7 @@ provider "aws" {
 
   default_tags {
 
-    tags = {"Account":"Dasmeta-Demo","AppliedFrom":"terraform-cloud","ManageLevel":"account","ManagedBy":"terraform","TerraformCloudWorkspace":"0-accounts_prod_account","TerraformModuleSource":"dasmeta/account/aws","TerraformModuleVersion":"1.2.2"}
+    tags = {"Account":"Dasmeta-Demo","AppliedFrom":"terraform-cloud","ManageLevel":"accoun","ManagedBy":"terraform","TerraformCloudWorkspace":"0-accounts_prod_account","TerraformModuleSource":"dasmeta/account/aws","TerraformModuleVersion":"1.2.2"}
   }
 }
 provider "aws" {

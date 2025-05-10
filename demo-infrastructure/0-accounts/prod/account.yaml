@@ -13,7 +13,7 @@ providers:
       default_tags:
         tags:
           Account: Dasmeta-Demo
-          ManageLevel: account
+          ManageLevel: accoun
   - name: aws
     alias: virginia
     version: ~> 4.0
