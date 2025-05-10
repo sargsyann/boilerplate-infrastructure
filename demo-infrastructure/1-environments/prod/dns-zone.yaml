@@ -2,7 +2,7 @@ source: dasmeta/dns/aws
 version: 1.0.4
 variables:
   create_zone: true
-  zone: "demo.yourdomain.com"
+  zone: "demo.dasmeta.com"
   records: []
     # - name: demo.yourdomain.com
     #   alb: prod-ingress
