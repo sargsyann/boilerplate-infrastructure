@@ -1,15 +1,15 @@
 source: dasmeta/eks/aws
 version: 2.21.2
 variables:
-  account_id: "<account_id>" # e.g. 123456789012
+  account_id: "091947912116" # e.g. 123456789012
   cluster_name: "eks-prod"
   users:
     - username: terraform
   alarms:
     sns_topic: "Default"
   map_roles:
-    - rolearn: <AWSReservedSSO_AdministratorAccess_arn>
-      username: <AWSReservedSSO_AdministratorAccess_username>
+    - rolearn: "arn:aws:iam::091947912116:role/aws-reserved/sso.amazonaws.com/eu-central-1/AWSReservedSSO_AdministratorAccess_ab82266ca76b72c5"
+      username: AWSReservedSSO_AdministratorAccess_ab82266ca76b72c5
       groups:
         - system:masters
   adot_config:
