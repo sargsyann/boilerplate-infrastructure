@@ -11,7 +11,7 @@ module "this" {
   healthcheck_success_codes = "200-399"
   hostname = "demo.dasmeta.com"
   name = "prod-ingress"
-  namespace = "frontend"
+  namespace = "demo"
   tls_hosts = ["*.demo.dasmeta.com"]
   providers = {"aws":"aws","kubernetes":"kubernetes"}
 }
