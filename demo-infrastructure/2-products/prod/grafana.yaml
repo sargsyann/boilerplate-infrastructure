@@ -60,7 +60,7 @@ providers:
       default_tags:
         tags:
           Account: Dasmeta-Demo
-          ManageLevel: environment
+          ManageLevel: environmen
   - name: kubernetes
     version: ~> 2.23
     module_nested_provider: true
