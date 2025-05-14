@@ -5,6 +5,7 @@ module "this" {
   version = "1.16.4"
 
   alerts = {"rules":[{"datasource":"prometheus","equation":"gt","expr":"sum(rate(container_cpu_usage_seconds_total{namespace=\\\"demo\\\",pod=~\\\"frontend.*\\\"}[5m]))","function":"Last","name":"Frontend High CPU Alert","threshold":95}]}
+  application_dashboard = {"data_source":{"type":"prometheus"},"rows":[{"name":"backend-strapi","type":"block/service"},{"name":"frontend","type":"block/service"}],"variables":[{"name":"namespace","options":[{"selected":true},{"value":"demo"}]}]}
   aws_region = "eu-central-1"
   cluster_name = "eks-prod"
   grafana_admin_password = "password"

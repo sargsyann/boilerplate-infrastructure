@@ -2,6 +2,19 @@ source: dasmeta/grafana/onpremise
 version: 1.16.4
 variables:
   name: demo-prod-grafana
+  application_dashboard:
+    rows:
+      - type: "block/service"
+        name: "backend-strapi"
+      - type: "block/service"
+        name: "frontend"
+    data_source:
+      type: "prometheus"
+    variables:
+      - name: "namespace"
+        options:
+        - selected: true
+        - value: "demo"
   grafana_admin_password: "password"
   cluster_name: "eks-prod"
   alerts:
