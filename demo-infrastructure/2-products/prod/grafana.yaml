@@ -9,12 +9,13 @@ variables:
       - type: "block/service"
         name: "frontend"
     data_source:
+      uid: "ced8838y6eepsf"
       type: "prometheus"
     variables:
       - name: "namespace"
         options:
-        - selected: true
-        - value: "demo"
+          selected: true
+          value: "demo"
   grafana_admin_password: "password"
   cluster_name: "eks-prod"
   alerts:
