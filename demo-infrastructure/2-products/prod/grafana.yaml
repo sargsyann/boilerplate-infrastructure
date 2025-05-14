@@ -14,8 +14,9 @@ variables:
     variables:
       - name: "namespace"
         options:
-          selected: true
-          value: "demo"
+        - selected: true
+          value: "prod"
+        - value: "demo"
   grafana_admin_password: "password"
   cluster_name: "eks-prod"
   alerts:
