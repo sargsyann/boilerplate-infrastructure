@@ -9,6 +9,7 @@ variables:
       - type: "block/service"
         name: "frontend"
     data_source:
+      uid: "prometheus"
       type: "prometheus"
     variables:
       - name: "namespace"
