@@ -2,7 +2,7 @@
 
 module "this" {
   source  = "dasmeta/grafana/onpremise"
-  version = "1.16.3"
+  version = "1.16.4"
 
   alerts = {"rules":[{"datasource":"prometheus","equation":"gt","expr":"sum(rate(container_cpu_usage_seconds_total{namespace=\\\"demo\\\",pod=~\\\"frontend.*\\\"}[5m]))","function":"Last","name":"Frontend High CPU Alert","threshold":95}]}
   aws_region = "eu-central-1"
