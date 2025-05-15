@@ -1,5 +1,5 @@
 source: dasmeta/grafana/onpremise
-version: 1.16.4
+version: 1.16.5
 variables:
   name: demo-prod-grafana
   application_dashboard:
@@ -15,7 +15,7 @@ variables:
       - name: "namespace"
         options:
         - selected: true
-          value: "prod"
+          value: "demo"
         - value: "demo"
   grafana_admin_password: "password"
   cluster_name: "eks-prod"
