@@ -1,9 +1,18 @@
 source: dasmeta/grafana/onpremise
-version: 1.16.5
+version: 1.17.0
 variables:
   name: demo-prod-grafana
   application_dashboard:
     rows:
+      - type: "block/sla"
+        name: "SLA"
+      - type: "block/alb_ingress"
+        name: "ALB"
+        load_balancer_arn: "arn:aws:elasticloadbalancing:eu-central-1:091947912116:loadbalancer/app/prod-ingress/fe7376c7ea9e4e2c"
+        region: "eu-central-1"
+      - type: "block/cloudwatch"
+        name: "Cloudwatch Metrics"
+        region: "eu-central-1"
       - type: "block/service"
         name: "backend-strapi"
       - type: "block/service"
