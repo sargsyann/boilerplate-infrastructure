@@ -5,12 +5,12 @@ module "this" {
   version = "1.0.1"
 
   availability_zones = ["eu-central-1a","eu-central-1b"]
-  cidr = "10.17.0.0/16"
-  name = "prod-vpc"
+  cidr = "10.18.0.0/16"
+  name = "dev-vpc"
   private_subnet_tags = {"kubernetes.io/cluster/eks-prod":"shared","kubernetes.io/role/internal-elb":"1"}
-  private_subnets = ["10.17.1.0/24","10.17.2.0/24"]
+  private_subnets = ["10.18.1.0/24","10.18.2.0/24"]
   public_subnet_tags = {"kubernetes.io/cluster/eks-prod":"shared","kubernetes.io/role/elb":"1"}
-  public_subnets = ["10.17.3.0/24","10.17.4.0/24"]
+  public_subnets = ["10.18.3.0/24","10.18.4.0/24"]
 
 }
 
